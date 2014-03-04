@@ -13,7 +13,7 @@
      limitations under the License.
 -->
 <!-- From: file:/Users/carlli/AndroidStudioProjects/nRFUART_CLSW/app/src/main/AndroidManifest.xml -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="43" android:versionName="2.0" package="com.carlandwu.BleLock">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="43" android:versionName="3.5" package="com.carlandwu.BleLock">
 
     <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="18"/>
     <uses-permission android:name="android.permission.BLUETOOTH"/>

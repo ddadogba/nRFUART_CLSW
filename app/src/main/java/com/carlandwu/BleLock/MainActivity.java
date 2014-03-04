@@ -332,6 +332,22 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
                              listAdapter.add("["+currentDateTimeString+"] Connected to: "+ mDevice.getName());
                         	 	messageListView.smoothScrollToPosition(listAdapter.getCount() - 1);
                              mState = UART_PROFILE_CONNECTED;
+
+                         String message = mBtAdapter.getAddress();
+                         byte[] value;
+                         try{
+                             value = message.getBytes("UTF-8");
+                             mService.writeRXCharacteristic(value);
+                             //Update the log with time stamp
+                             //String currentDateTimeString = DateFormat.getTimeInstance().format(new Date());
+                             listAdapter.add("["+currentDateTimeString+"] TX: "+ "address of this device is sent");
+                             messageListView.smoothScrollToPosition(listAdapter.getCount() - 1);
+                             edtMessage.setText("");
+                         } catch (UnsupportedEncodingException e) {
+                             // TODO Auto-generated catch block
+                             e.printStackTrace();
+                         }
+
                      }
             	 });
             }
