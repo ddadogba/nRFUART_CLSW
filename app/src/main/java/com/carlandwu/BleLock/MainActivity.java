@@ -328,6 +328,13 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
                              btnConnectDisconnect.setText("Disconnect");
                              edtMessage.setEnabled(true);
                              btnSend.setEnabled(true);
+                             btnCarl.setEnabled(true);
+                             btnLi.setEnabled(true);
+                             btnKa.setEnabled(true);
+                             btnKi.setEnabled(true);
+                             btnWu.setEnabled(true);
+                             btnHoi.setEnabled(true);
+                             btnFai.setEnabled(true);
                              ((TextView) findViewById(R.id.deviceName)).setText(mDevice.getName()+ " - ready");
                              listAdapter.add("["+currentDateTimeString+"] Connected to: "+ mDevice.getName());
                         	 	messageListView.smoothScrollToPosition(listAdapter.getCount() - 1);
@@ -340,7 +347,7 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
                              mService.writeRXCharacteristic(value);
                              //Update the log with time stamp
                              //String currentDateTimeString = DateFormat.getTimeInstance().format(new Date());
-                             listAdapter.add("["+currentDateTimeString+"] TX: "+ "address of this device is sent");
+                             listAdapter.add("["+currentDateTimeString+"] TX: "+ message);
                              messageListView.smoothScrollToPosition(listAdapter.getCount() - 1);
                              edtMessage.setText("");
                          } catch (UnsupportedEncodingException e) {

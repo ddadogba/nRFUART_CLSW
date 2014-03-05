@@ -26,9 +26,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cc3ba1c3-7368-45c7-9604-af8a8eda7a27" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/app/build/dex/debug/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/pre-dexed/debug/support-v4-19.0.1-3bf117e59e2e0f41bbf9219f2be90cdcf1dd583d.jar" afterPath="$PROJECT_DIR$/app/build/pre-dexed/debug/support-v4-19.0.1-3bf117e59e2e0f41bbf9219f2be90cdcf1dd583d.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/carlandwu/BleLock/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/carlandwu/BleLock/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/source/r/debug/com/carlandwu/BleLock/R.java" afterPath="$PROJECT_DIR$/app/build/source/r/debug/com/carlandwu/BleLock/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -102,17 +100,12 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/carlandwu/BleLock/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="335" column="66" selection-start="14129" selection-end="14129" vertical-scroll-proportion="0.5708447" vertical-offset="4066" max-vertical-offset="7680">
+            <state line="336" column="53" selection-start="14056" selection-end="14056" vertical-scroll-proportion="0.8530021" vertical-offset="3638" max-vertical-offset="7290">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#13271#15018#0" expanded="true" />
-                <element signature="e#15001#15002#0" expanded="true" />
-                <element signature="e#15182#16028#0" expanded="true" />
-                <element signature="e#16008#16009#0" expanded="true" />
-                <element signature="e#21815#21835#0" expanded="true" />
-                <element signature="e#21861#21883#0" expanded="true" />
-                <element signature="e#21916#21934#0" expanded="true" />
-                <element signature="e#22193#22210#0" expanded="true" />
+                <element signature="e#22165#22185#0" expanded="true" />
+                <element signature="e#22211#22233#0" expanded="true" />
+                <element signature="e#22266#22284#0" expanded="true" />
+                <element signature="e#22543#22560#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,25 +113,28 @@
       </file>
       <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="39" selection-start="3556" selection-end="3556" vertical-scroll-proportion="-27.222221" vertical-offset="660" max-vertical-offset="2730">
+              <folding>
+                <element signature="e#5912#5928#0" expanded="true" />
+                <element signature="e#6264#6283#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
           <provider editor-type-id="android-designer">
             <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="44" selection-start="1798" selection-end="1798" vertical-scroll-proportion="-27.777779" vertical-offset="0" max-vertical-offset="2625">
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="device_list.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/device_list.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
           <provider editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
               <folding />
             </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -862,7 +858,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1035,6 +1030,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -1059,7 +1055,7 @@
     <property name="ExportedModule" value="app" />
     <property name="ExportedApkPath" value="$PROJECT_DIR$/app/app.apk" />
     <property name="AndroidRunProguardForReleaseBuild" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="002639c84f4a6500" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="0a276a1b" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="AVD_for_Nexus_4" />
   </component>
   <component name="RunManager" selected="Android Application.app">
@@ -1092,19 +1088,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1130,6 +1113,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1267,7 +1263,7 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939634" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939634" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32939634" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1303,29 +1299,160 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/carlandwu/BleLock/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8085">
+        <state line="326" column="29" selection-start="13464" selection-end="13464" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8325">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#13271#15018#0" expanded="true" />
-            <element signature="e#15001#15002#0" expanded="true" />
-            <element signature="e#15182#16028#0" expanded="true" />
-            <element signature="e#16008#16009#0" expanded="true" />
-            <element signature="e#21815#21835#0" expanded="true" />
-            <element signature="e#21861#21883#0" expanded="true" />
-            <element signature="e#21916#21934#0" expanded="true" />
-            <element signature="e#22193#22210#0" expanded="true" />
+            <element signature="e#22165#22185#0" expanded="true" />
+            <element signature="e#22211#22233#0" expanded="true" />
+            <element signature="e#22266#22284#0" expanded="true" />
+            <element signature="e#22543#22560#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/carlandwu/BleLock/DeviceListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="217" column="5" selection-start="7276" selection-end="7276" vertical-scroll-proportion="0.0" vertical-offset="3255" max-vertical-offset="4200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="44" selection-start="1798" selection-end="1798" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="2625">
+          <folding>
+            <element signature="e#5912#5928#0" expanded="true" />
+            <element signature="e#6264#6283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/device_list.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="45" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0" vertical-offset="74" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/carlandwu/BleLock/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="326" column="60" selection-start="13495" selection-end="13495" vertical-scroll-proportion="0.0" vertical-offset="4890" max-vertical-offset="8325">
+          <folding>
+            <element signature="e#22165#22185#0" expanded="true" />
+            <element signature="e#22211#22233#0" expanded="true" />
+            <element signature="e#22266#22284#0" expanded="true" />
+            <element signature="e#22543#22560#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="44" selection-start="1798" selection-end="1798" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="2625">
+          <folding>
+            <element signature="e#5912#5928#0" expanded="true" />
+            <element signature="e#6264#6283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="39" selection-start="2412" selection-end="2412" vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="2625">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/device_list.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="45" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0" vertical-offset="74" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/carlandwu/BleLock/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="329" column="54" selection-start="13681" selection-end="13681" vertical-scroll-proportion="0.0" vertical-offset="4935" max-vertical-offset="8115">
+          <folding>
+            <element signature="e#22165#22185#0" expanded="true" />
+            <element signature="e#22211#22233#0" expanded="true" />
+            <element signature="e#22266#22284#0" expanded="true" />
+            <element signature="e#22543#22560#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="44" selection-start="1798" selection-end="1798" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="2625">
+          <folding>
+            <element signature="e#5912#5928#0" expanded="true" />
+            <element signature="e#6264#6283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/device_list.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="45" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0" vertical-offset="74" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/carlandwu/BleLock/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8085">
+          <folding>
+            <element signature="e#22165#22185#0" expanded="true" />
+            <element signature="e#22211#22233#0" expanded="true" />
+            <element signature="e#22266#22284#0" expanded="true" />
+            <element signature="e#22543#22560#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="39" selection-start="2412" selection-end="2412" vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="2625">
+          <folding>
+            <element signature="e#5912#5928#0" expanded="true" />
+            <element signature="e#6264#6283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -1344,27 +1471,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="13" selection-start="1936" selection-end="1936" vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="6135">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#13271#15018#0" expanded="true" />
-            <element signature="e#15001#15002#0" expanded="true" />
-            <element signature="e#15182#16028#0" expanded="true" />
-            <element signature="e#16008#16009#0" expanded="true" />
-            <element signature="e#21815#21835#0" expanded="true" />
-            <element signature="e#21861#21883#0" expanded="true" />
-            <element signature="e#21916#21934#0" expanded="true" />
-            <element signature="e#22193#22210#0" expanded="true" />
+            <element signature="e#22165#22185#0" expanded="true" />
+            <element signature="e#22211#22233#0" expanded="true" />
+            <element signature="e#22266#22284#0" expanded="true" />
+            <element signature="e#22543#22560#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="23" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1680">
-          <folding />
+          <folding>
+            <element signature="e#5912#5928#0" expanded="true" />
+            <element signature="e#6264#6283#0" expanded="true" />
+          </folding>
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -1386,46 +1511,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/carlandwu/BleLock/DeviceListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="13" selection-start="1825" selection-end="1825" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="3870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/device_list.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
+      <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/java/lang/Runnable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="44" selection-start="1798" selection-end="1798" vertical-scroll-proportion="-27.777779" vertical-offset="0" max-vertical-offset="2625">
+        <state line="31" column="16" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.32697546" vertical-offset="0" max-vertical-offset="734" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/carlandwu/BleLock/DeviceListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="296" column="47" selection-start="9743" selection-end="9743" vertical-scroll-proportion="0.25952044" vertical-offset="3161" max-vertical-offset="3870">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="39" selection-start="3556" selection-end="3556" vertical-scroll-proportion="-27.222221" vertical-offset="660" max-vertical-offset="2730">
+          <folding>
+            <element signature="e#5912#5928#0" expanded="true" />
+            <element signature="e#6264#6283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/carlandwu/BleLock/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="335" column="66" selection-start="14129" selection-end="14129" vertical-scroll-proportion="0.5708447" vertical-offset="4066" max-vertical-offset="7680">
+        <state line="336" column="53" selection-start="14056" selection-end="14056" vertical-scroll-proportion="0.8530021" vertical-offset="3638" max-vertical-offset="7290">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#13271#15018#0" expanded="true" />
-            <element signature="e#15001#15002#0" expanded="true" />
-            <element signature="e#15182#16028#0" expanded="true" />
-            <element signature="e#16008#16009#0" expanded="true" />
-            <element signature="e#21815#21835#0" expanded="true" />
-            <element signature="e#21861#21883#0" expanded="true" />
-            <element signature="e#21916#21934#0" expanded="true" />
-            <element signature="e#22193#22210#0" expanded="true" />
+            <element signature="e#22165#22185#0" expanded="true" />
+            <element signature="e#22211#22233#0" expanded="true" />
+            <element signature="e#22266#22284#0" expanded="true" />
+            <element signature="e#22543#22560#0" expanded="true" />
           </folding>
         </state>
       </provider>
