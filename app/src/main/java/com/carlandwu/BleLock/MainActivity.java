@@ -37,15 +37,20 @@ import android.os.IBinder;
 import android.os.Message;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.RadioGroup;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 import java.io.UnsupportedEncodingException;
 import java.text.DateFormat;
 import java.util.Date;
@@ -67,7 +72,9 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
     private BluetoothAdapter mBtAdapter = null;
     private ListView messageListView;
     private ArrayAdapter<String> listAdapter;
-    private Button btnConnectDisconnect,btnSend,btnCarl,btnLi,btnKa,btnKi,btnWu,btnHoi,btnFai;
+    private Button btnConnectDisconnect,btnSend,btnCarl,btnLi,btnKa,btnKi,btnHoi,btnFai;
+    private Switch swhLock, swhUnlock;
+    private MenuItem actionBtnConnect,viewHideLog;
     private EditText edtMessage;
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -85,20 +92,23 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
         messageListView.setDivider(null);
         btnConnectDisconnect=(Button) findViewById(R.id.btn_select);
         btnSend=(Button) findViewById(R.id.sendButton);
-        btnCarl=(Button) findViewById(R.id.button);
+        /*btnCarl=(Button) findViewById(R.id.button);
         btnLi=(Button) findViewById(R.id.button2);
         btnKa=(Button) findViewById(R.id.button3);
-        btnKi=(Button) findViewById(R.id.button4);
-        btnWu=(Button) findViewById(R.id.button5);
+        btnKi=(Button) findViewById(R.id.button4);*/
         btnHoi=(Button) findViewById(R.id.button6);
         btnFai=(Button) findViewById(R.id.button7);
+        swhLock=(Switch) findViewById(R.id.switch1);
+        swhUnlock=(Switch) findViewById(R.id.switch2);
+        actionBtnConnect=(MenuItem) findViewById(R.id.action_connect);
+        viewHideLog=(MenuItem) findViewById(R.id.action_log);
         edtMessage = (EditText) findViewById(R.id.sendText);
         service_init();
 
      
        
         // Handler Disconnect & Connect button
-        btnConnectDisconnect.setOnClickListener(new View.OnClickListener() {
+        /*btnConnectDisconnect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!mBtAdapter.isEnabled()) {
@@ -123,11 +133,102 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
         			}
                 }
             }
+        });*/
+
+        swhLock.setChecked(true);   // set the switch to ON
+// attach a listener to check for changes in state
+        swhLock.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView,
+                                         boolean isChecked) {
+
+                if (isChecked) {
+
+                    String message = "AutolockEnabled";
+                    byte[] value;
+                    try{
+                        value = message.getBytes("UTF-8");
+                        mService.writeRXCharacteristic(value);
+                        //Update the log with time stamp
+                        String currentDateTimeString = DateFormat.getTimeInstance().format(new Date());
+                        listAdapter.add("["+currentDateTimeString+"] TX: "+ message);
+                        messageListView.smoothScrollToPosition(listAdapter.getCount() - 1);
+                        edtMessage.setText("");
+                    } catch (UnsupportedEncodingException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+
+                } else {
+
+                    String message = "AutolockDisabled";
+                    byte[] value;
+                    try{
+                        value = message.getBytes("UTF-8");
+                        mService.writeRXCharacteristic(value);
+                        //Update the log with time stamp
+                        String currentDateTimeString = DateFormat.getTimeInstance().format(new Date());
+                        listAdapter.add("["+currentDateTimeString+"] TX: "+ message);
+                        messageListView.smoothScrollToPosition(listAdapter.getCount() - 1);
+                        edtMessage.setText("");
+                    } catch (UnsupportedEncodingException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+                }
+
+            }});
+
+        swhUnlock.setChecked(true);   // set the switch to ON
+// attach a listener to check for changes in state
+        swhUnlock.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView,
+                                         boolean isChecked) {
+
+                if (isChecked) {
+
+                    String message = "AutoUnlockEnabled";
+                    byte[] value;
+                    try{
+                        value = message.getBytes("UTF-8");
+                        mService.writeRXCharacteristic(value);
+                        //Update the log with time stamp
+                        String currentDateTimeString = DateFormat.getTimeInstance().format(new Date());
+                        listAdapter.add("["+currentDateTimeString+"] TX: "+ message);
+                        messageListView.smoothScrollToPosition(listAdapter.getCount() - 1);
+                        edtMessage.setText("");
+                    } catch (UnsupportedEncodingException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+
+                } else {
+
+                    String message = "AutoUnlockDisabled";
+                    byte[] value;
+                    try{
+                        value = message.getBytes("UTF-8");
+                        mService.writeRXCharacteristic(value);
+                        //Update the log with time stamp
+                        String currentDateTimeString = DateFormat.getTimeInstance().format(new Date());
+                        listAdapter.add("["+currentDateTimeString+"] TX: "+ message);
+                        messageListView.smoothScrollToPosition(listAdapter.getCount() - 1);
+                        edtMessage.setText("");
+                    } catch (UnsupportedEncodingException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+                }
+
+            }
         });
 
-        btnCarl.setOnClickListener(new View.OnClickListener() {
+        /*btnCarl.setOnClickListener(new View.OnClickListener() {
             public void onClick(View u) {
-                String message = "1";
+                String message = "AutolockEnabled";
                 byte[] value;
                 try{
                     value = message.getBytes("UTF-8");
@@ -138,7 +239,7 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
                     messageListView.smoothScrollToPosition(listAdapter.getCount() - 1);
                     edtMessage.setText("");
                 } catch (UnsupportedEncodingException e) {
-                    // TODO Auto-generated catch block
+                    //
                     e.printStackTrace();
                 }
             }
@@ -146,7 +247,7 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
 
         btnLi.setOnClickListener(new View.OnClickListener() {
             public void onClick(View w) {
-                String message = "2";
+                String message = "AutolockDisabled";
                 byte[] value;
                 try{
                     value = message.getBytes("UTF-8");
@@ -157,7 +258,7 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
                     messageListView.smoothScrollToPosition(listAdapter.getCount() - 1);
                     edtMessage.setText("");
                 } catch (UnsupportedEncodingException e) {
-                    // TODO Auto-generated catch block
+                    //
                     e.printStackTrace();
                 }
             }
@@ -165,7 +266,7 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
 
         btnKa.setOnClickListener(new View.OnClickListener() {
             public void onClick(View q) {
-                String message = "3";
+                String message = "AutoUnlockEnabled";
                 byte[] value;
                 try{
                     value = message.getBytes("UTF-8");
@@ -176,7 +277,7 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
                     messageListView.smoothScrollToPosition(listAdapter.getCount() - 1);
                     edtMessage.setText("");
                 } catch (UnsupportedEncodingException e) {
-                    // TODO Auto-generated catch block
+                    //
                     e.printStackTrace();
                 }
             }
@@ -184,7 +285,7 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
 
         btnKi.setOnClickListener(new View.OnClickListener() {
             public void onClick(View i) {
-                String message = "4";
+                String message = "AutoUnlockDisabled";
                 byte[] value;
                 try{
                     value = message.getBytes("UTF-8");
@@ -195,34 +296,16 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
                     messageListView.smoothScrollToPosition(listAdapter.getCount() - 1);
                     edtMessage.setText("");
                 } catch (UnsupportedEncodingException e) {
-                    // TODO Auto-generated catch block
+                    //
                     e.printStackTrace();
                 }
             }
-        });
+        });*/
 
-        btnWu.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View j) {
-                String message = "5";
-                byte[] value;
-                try{
-                    value = message.getBytes("UTF-8");
-                    mService.writeRXCharacteristic(value);
-                    //Update the log with time stamp
-                    String currentDateTimeString = DateFormat.getTimeInstance().format(new Date());
-                    listAdapter.add("["+currentDateTimeString+"] TX: "+ message);
-                    messageListView.smoothScrollToPosition(listAdapter.getCount() - 1);
-                    edtMessage.setText("");
-                } catch (UnsupportedEncodingException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
-            }
-        });
 
         btnHoi.setOnClickListener(new View.OnClickListener() {
             public void onClick(View k) {
-                String message = "clockwise";
+                String message = "Lock";
                 byte[] value;
                 try{
                     value = message.getBytes("UTF-8");
@@ -241,7 +324,7 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
 
         btnFai.setOnClickListener(new View.OnClickListener() {
             public void onClick(View jji) {
-                String message = "anticlockwise";
+                String message = "Unlock";
                 byte[] value;
                 try{
                     value = message.getBytes("UTF-8");
@@ -285,7 +368,98 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
         // Set initial UI state
         
     }
-    
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.connect, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    public boolean onPrepareOptionsMenu(Menu menu) {
+
+        if (messageListView.getVisibility()==View.VISIBLE) {
+            MenuItem viewHideLog = menu.findItem(R.id.action_log);
+            viewHideLog.setTitle("Hide Log");
+            if (btnConnectDisconnect.getText().equals("Disconnect")) {
+                MenuItem conDisCon2 = menu.findItem(R.id.action_connect);
+                conDisCon2.setTitle("DISCONNECT");
+                if (btnConnectDisconnect.getText().equals("Connect")) {
+                    MenuItem conDisCon3 = menu.findItem(R.id.action_connect);
+                    conDisCon3.setTitle("CONNECT");
+                }
+            }
+        } else if (messageListView.getVisibility()==View.GONE) {
+            MenuItem viewHideLog = menu.findItem(R.id.action_log);
+            viewHideLog.setTitle("View Log");
+            if (btnConnectDisconnect.getText().equals("Disconnect")) {
+                MenuItem conDisCon2 = menu.findItem(R.id.action_connect);
+                conDisCon2.setTitle("DISCONNECT");
+                if (btnConnectDisconnect.getText().equals("Connect")) {
+                    MenuItem conDisCon3 = menu.findItem(R.id.action_connect);
+                    conDisCon3.setTitle("CONNECT");
+                }
+            }
+        }
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    //handle action buttons
+    public boolean onOptionsItemSelected(MenuItem item) {
+    // Handle presses on the action bar items
+    switch (item.getItemId()) {
+
+        case R.id.action_connect:
+            if (!mBtAdapter.isEnabled()) {
+                Log.i(TAG, "onClick - BT not enabled yet");
+                Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+                startActivityForResult(enableIntent, REQUEST_ENABLE_BT);
+            }
+            else {
+                if (btnConnectDisconnect.getText().equals("Connect")){
+
+                    //Connect button pressed, open DeviceListActivity class, with popup windows that scan for devices
+
+                    Intent newIntent = new Intent(MainActivity.this, DeviceListActivity.class);
+                    startActivityForResult(newIntent, REQUEST_SELECT_DEVICE);
+                } else {
+                    //Disconnect button pressed
+                    if (mDevice!=null)
+                    {
+                        mService.disconnect();
+
+                    }
+                }
+            }
+            return true;
+
+        case R.id.action_log:
+            if (messageListView.getVisibility()==View.VISIBLE) {
+                messageListView.setVisibility(View.GONE);
+                edtMessage.setVisibility(View.GONE);
+                btnSend.setVisibility(View.GONE);
+                /*btnCarl.setVisibility(View.GONE);
+                btnLi.setVisibility(View.GONE);
+                btnKa.setVisibility(View.GONE);
+                btnKi.setVisibility(View.GONE);*/
+                invalidateOptionsMenu();
+            } else if (messageListView.getVisibility()==View.GONE) {
+                messageListView.setVisibility(View.VISIBLE);
+                edtMessage.setVisibility(View.VISIBLE);
+                btnSend.setVisibility(View.VISIBLE);
+                /*btnCarl.setVisibility(View.VISIBLE);
+                btnLi.setVisibility(View.VISIBLE);
+                btnKa.setVisibility(View.VISIBLE);
+                btnKi.setVisibility(View.VISIBLE);*/
+                invalidateOptionsMenu();
+            }   return true;
+
+        default:
+            return super.onOptionsItemSelected(item);
+    }
+}
+
+
     //UART service connected/disconnected
     private ServiceConnection mServiceConnection = new ServiceConnection() {
         public void onServiceConnected(ComponentName className, IBinder rawBinder) {
@@ -326,15 +500,17 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
                          	String currentDateTimeString = DateFormat.getTimeInstance().format(new Date());
                              Log.d(TAG, "UART_CONNECT_MSG");
                              btnConnectDisconnect.setText("Disconnect");
+                             invalidateOptionsMenu();
                              edtMessage.setEnabled(true);
                              btnSend.setEnabled(true);
-                             btnCarl.setEnabled(true);
+                             /*btnCarl.setEnabled(true);
                              btnLi.setEnabled(true);
                              btnKa.setEnabled(true);
-                             btnKi.setEnabled(true);
-                             btnWu.setEnabled(true);
+                             btnKi.setEnabled(true);*/
                              btnHoi.setEnabled(true);
                              btnFai.setEnabled(true);
+                             swhLock.setEnabled(true);
+                             swhUnlock.setEnabled(true);
                              ((TextView) findViewById(R.id.deviceName)).setText(mDevice.getName()+ " - ready");
                              listAdapter.add("["+currentDateTimeString+"] Connected to: "+ mDevice.getName());
                         	 	messageListView.smoothScrollToPosition(listAdapter.getCount() - 1);
@@ -350,9 +526,9 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
                              listAdapter.add("["+currentDateTimeString+"] TX: "+ message);
                              messageListView.smoothScrollToPosition(listAdapter.getCount() - 1);
                              edtMessage.setText("");
-                         } catch (UnsupportedEncodingException e) {
+                         } catch (UnsupportedEncodingException lm) {
                              // TODO Auto-generated catch block
-                             e.printStackTrace();
+                             lm.printStackTrace();
                          }
 
                      }
@@ -366,6 +542,7 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
                     	 	 String currentDateTimeString = DateFormat.getTimeInstance().format(new Date());
                              Log.d(TAG, "UART_DISCONNECT_MSG");
                              btnConnectDisconnect.setText("Connect");
+                             invalidateOptionsMenu();
                              edtMessage.setEnabled(false);
                              btnSend.setEnabled(false);
                              ((TextView) findViewById(R.id.deviceName)).setText("Not Connected");

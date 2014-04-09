@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_log"
+    android:title="@string/action_log"
+    android:showAsAction="always|withText"/>
+
+    <item android:id="@+id/action_connect"
+    android:title="@string/action_connect"
+    android:showAsAction="always|withText" />
+
+    <!-- Settings, should always be in the overflow -->
+</menu>

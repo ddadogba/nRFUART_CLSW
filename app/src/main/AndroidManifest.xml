@@ -20,14 +20,15 @@
     android:versionName="3.5" >
 
     <uses-sdk
-        android:minSdkVersion="18"
-        android:targetSdkVersion="18" />
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application 
         android:label="BLElock"
-        android:theme="@android:style/Theme.Holo.Light"
+        android:theme="@style/myTheme.WithActionBar"
         android:icon="@drawable/ic_launcher">
         <activity
             android:name="com.carlandwu.BleLock.MainActivity"
@@ -40,7 +41,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.carlandwu.BleLock.DeviceListActivity" android:label="BLElock" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name="com.carlandwu.BleLock.DeviceListActivity" android:label="BLElock" android:theme="@android:style/Theme.DeviceDefault.Dialog"/>
         <service android:enabled="true" android:name="com.carlandwu.BleLock.UartService" />
     </application>
 
