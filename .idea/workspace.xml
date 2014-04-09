@@ -33,28 +33,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.carlandwu.BleLock" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc3ba1c3-7368-45c7-9604-af8a8eda7a27" name="Default" comment="9april">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/build/source/buildConfig/buildConfig3.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/connect.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/main1.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/build/source/r/r2.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_19_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/pre-dexed/debug/support-v4-19.0.1-3bf117e59e2e0f41bbf9219f2be90cdcf1dd583d.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/app/build/dex/debug/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/source/buildConfig/debug/com/carlandwu/BleLock/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/source/buildConfig/debug/com/carlandwu/BleLock/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/carlandwu/BleLock/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/carlandwu/BleLock/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/source/r/debug/com/carlandwu/BleLock/R.java" afterPath="$PROJECT_DIR$/app/build/source/r/debug/com/carlandwu/BleLock/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nRFUART_CLSW.iml" afterPath="$PROJECT_DIR$/nRFUART_CLSW.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+    <list default="true" id="cc3ba1c3-7368-45c7-9604-af8a8eda7a27" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nRFUART_Googlev2.iws" />
@@ -127,8 +106,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/carlandwu/BleLock/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.7561308" vertical-offset="9000" max-vertical-offset="10305">
-              <caret line="613" column="34" selection-start-line="613" selection-start-column="34" selection-end-line="613" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.77656674" vertical-offset="9000" max-vertical-offset="10305">
+              <caret line="688" column="13" selection-start-line="688" selection-start-column="13" selection-end-line="688" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -1280,11 +1259,16 @@
       <created>1393352935551</created>
       <updated>1393352935551</updated>
     </task>
+    <task id="LOCAL-00001" summary="9april">
+      <created>1397027633696</created>
+      <updated>1397027633696</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1361,6 +1345,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="9april" />
+    <option name="LAST_COMMIT_MESSAGE" value="9april" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1809,8 +1795,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/carlandwu/BleLock/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7561308" vertical-offset="9000" max-vertical-offset="10305">
-          <caret line="613" column="34" selection-start-line="613" selection-start-column="34" selection-end-line="613" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.77656674" vertical-offset="9000" max-vertical-offset="10305">
+          <caret line="688" column="13" selection-start-line="688" selection-start-column="13" selection-end-line="688" selection-end-column="13" />
           <folding />
         </state>
       </provider>

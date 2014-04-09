@@ -54,47 +54,34 @@
                 qualifiers=""
                 type="layout" />
             <file
+                name="connect"
+                path="/Users/carlli/AndroidStudioProjects/nRFUART_CLSW/app/src/main/res/menu/connect.xml"
+                qualifiers=""
+                type="menu" />
+            <file
                 path="/Users/carlli/AndroidStudioProjects/nRFUART_CLSW/app/src/main/res/values/strings.xml"
                 qualifiers="" >
-                <string name="Noupdate" >    No Update
-                </string>
-                <string name="SerialNumber" >SerialNumber
-                </string>
-                <string name="popup_message" >Do you want to quit this Application?
-                </string>
                 <string name="RegCertDataList" >RegCertDataList
-                </string>
-                <string name="SoftwareRevision" >SoftwareRevision
-                </string>
-                <string name="ManufactureId" >    ManufactureId
                 </string>
                 <string name="HardwareRevision" >HardwareRevision
                 </string>
                 <string name="ReadTxPower" >ReadTxPower
                 </string>
-                <string name="cancel" >Cancel
-                </string>
-                <string name="status" >Status
+                <string name="device" >Device:
                 </string>
                 <string name="no_device" >&lt;Select a device>
                 </string>
-                <string name="device" >Device:
-                </string>
-                <string name="readRssi" >Read Rssi Value
+                <string name="no_ble_devices" >No LE devices found.
                 </string>
                 <string name="ManufactureName" >ManufactureName
                 </string>
-                <string name="disconnect" >Disconnect
-                </string>
-                <string name="no_ble_devices" >No LE devices found.
-                </string>
-                <string name="high_alert" >HIGH Alert triggered!
+                <string name="readRssi" >Read Rssi Value
                 </string>
                 <string name="pair" >pair
                 </string>
-                <string name="ready" >Ready
+                <string name="high_alert" >HIGH Alert triggered!
                 </string>
-                <string name="Txpower" >    Txpower Level
+                <string name="ready" >Ready
                 </string>
                 <string name="RadioButton1" >Alert level high
                 </string>
@@ -102,25 +89,13 @@
                 </string>
                 <string name="writeTxnoti" >TxNoti
                 </string>
-                <string name="popup_yes" >YES
-                </string>
-                <string name="unpair" >unpair
-                </string>
                 <string name="RadioButton3" >Stop alerting
                 </string>
                 <string name="llsWrite" >LinkLossAlert
                 </string>
                 <string name="ble_not_supported" >Bluetooth Low Energy not supported
                 </string>
-                <string name="SystemId" >SystemId
-                </string>
                 <string name="popup_title" >Quit nRF UART?
-                </string>
-                <string name="scanning" >Scanning for devices...
-                </string>
-                <string name="removeBond" >Remove Bond
-                </string>
-                <string name="low_alert" >LOW Alert triggered!
                 </string>
                 <string name="connected" >Connected
                 </string>
@@ -132,59 +107,132 @@
                 </string>
                 <string name="FirmwareRevision" >FirmwareRevision
                 </string>
+                <string name="ModelNumber" >ModelNumber
+                </string>
+                <string name="connect" >connect
+                </string>
+                <string name="OrgId" >    OrganizationId
+                </string>
+                <string name="Noupdate" >    No Update
+                </string>
+                <string name="SerialNumber" >SerialNumber
+                </string>
+                <string name="SoftwareRevision" >SoftwareRevision
+                </string>
+                <string name="popup_message" >Do you want to quit this Application?
+                </string>
+                <string name="ManufactureId" >    ManufactureId
+                </string>
+                <string name="status" >Status
+                </string>
+                <string name="cancel" >Cancel
+                </string>
+                <string name="disconnect" >Disconnect
+                </string>
+                <string name="Txpower" >    Txpower Level
+                </string>
+                <string name="action_connect" >CONNECT
+                </string>
+                <string name="popup_yes" >YES
+                </string>
+                <string name="unpair" >unpair
+                </string>
+                <string name="SystemId" >SystemId
+                </string>
+                <string name="scanning" >Scanning for devices...
+                </string>
+                <string name="low_alert" >LOW Alert triggered!
+                </string>
+                <string name="removeBond" >Remove Bond
+                </string>
                 <string name="disconnected" >Not connected
                 </string>
                 <string name="iasWrite" >ImmediateAlert
                 </string>
+                <string name="action_log" >Log
+                </string>
                 <string name="BatteryLevel" >    Battery Level
                 </string>
-                <string name="app_name" >nRF UART v2.0
-                </string>
-                <string name="ModelNumber" >ModelNumber
+                <string name="app_name" >BLElock
                 </string>
                 <string name="paired" >paired
                 </string>
-                <string name="connect" >connect
-                </string>
                 <string name="scan" >Scan
-                </string>
-                <string name="OrgId" >    OrganizationId
                 </string>
             </file>
             <file
                 path="/Users/carlli/AndroidStudioProjects/nRFUART_CLSW/app/src/main/res/values/styles.xml"
                 qualifiers="" >
-                <color name="whitegrey" >#FFF2F2F2
-                </color>
 
                 <style
-                    name="DialogLight"
-                    parent="@android:style/Theme.Dialog" >
-                    <item name="android:windowBackground">
-@color/whitegrey
+                    name="myTheme.WithActionBar"
+                    parent="@android:style/Theme.Holo" >
+                    <item name="android:actionBarStyle">
+@style/TranslucentActionBar
                     </item>
-                    <item name="android:textColor">
-@color/black
+                    <item name="android:windowTranslucentNavigation">
+true
+                    </item>
+                    <item name="android:windowTranslucentStatus">
+true
+                    </item>
+                    <item name="android:windowContentOverlay">
+@null
+                    </item>
+                    <item name="android:actionMenuTextAppearance">
+@style/MyABMenuTextAppearance
+                    </item>
+                    <item name="android:actionMenuTextColor">
+#FF4500
                     </item>
                 </style>
 
+                <color name="WhiteGrey" >#FFF2F2F2
+                </color>
                 <color name="black" >#FF000000
                 </color>
 
                 <style
-                    name="AppBaseTheme"
-                    parent="android:Theme.Light" >
+                    name="DialogLight"
+                    parent="@android:style/Theme.DeviceDefault.Dialog" >
+                    <item name="android:windowBackground">
+@color/WhiteGrey
+                    </item>
+                    <item name="android:textColor">
+@color/White
+                    </item>
+                </style>
 
-                    <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-                    -->
+                <color name="White" >#FFFFFFFF
+                </color>
+
+                <style
+                    name="TranslucentActionBar"
+                    parent="@android:style/Widget.Holo.ActionBar" >
+                    <item name="android:background">
+@android:color/transparent
+                    </item>
+                </style>
+
+                <style
+                    name="MyABMenuTextAppearance"
+                    parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Menu" >
+       
+                    <item name="android:textSize">
+16sp
+                    </item>
+                    <item name="android:textStyle">
+bold
+                    </item>
+  //修改AB菜单项字体风格
+                    <item name="android:textAllCaps">
+false
+                    </item>
                 </style>
 
                 <style
                     name="AppTheme"
-                    parent="AppBaseTheme" >
+                    parent="myTheme.WithActionBar" >
 
                     <!-- All customizations that are NOT specific to a particular API-level can go here. -->
                 </style>

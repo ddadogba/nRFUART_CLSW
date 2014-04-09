@@ -15,11 +15,12 @@
 <!-- From: file:/Users/carlli/AndroidStudioProjects/nRFUART_CLSW/app/src/main/AndroidManifest.xml -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="43" android:versionName="3.5" package="com.carlandwu.BleLock">
 
-    <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="18"/>
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19"/>
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
-    <application android:icon="@drawable/ic_launcher" android:label="BLElock" android:theme="@android:style/Theme.Holo.Light">
+    <application android:icon="@drawable/ic_launcher" android:label="BLElock" android:theme="@style/myTheme.WithActionBar">
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="BLElock" android:name="com.carlandwu.BleLock.MainActivity" android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -27,7 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:label="BLElock" android:name="com.carlandwu.BleLock.DeviceListActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:label="BLElock" android:name="com.carlandwu.BleLock.DeviceListActivity" android:theme="@android:style/Theme.DeviceDefault.Dialog"/>
         <service android:enabled="true" android:name="com.carlandwu.BleLock.UartService"/>
     </application>
 

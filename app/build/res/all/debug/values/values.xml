@@ -4,8 +4,9 @@
     <!-- From: file:/Users/carlli/AndroidStudioProjects/nRFUART_CLSW/app/src/main/res/values/styles.xml -->
     <eat-comment />
 
+    <color name="White">#FFFFFFFF</color>
+    <color name="WhiteGrey">#FFF2F2F2</color>
     <color name="black">#FF000000</color>
-    <color name="whitegrey">#FFF2F2F2</color>
     <!-- From: file:/Users/carlli/AndroidStudioProjects/nRFUART_CLSW/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
@@ -27,7 +28,9 @@
     <string name="SoftwareRevision">SoftwareRevision</string>
     <string name="SystemId">SystemId</string>
     <string name="Txpower">    Txpower Level</string>
-    <string name="app_name">nRF UART v2.0</string>
+    <string name="action_connect">CONNECT</string>
+    <string name="action_log">Log</string>
+    <string name="app_name">BLElock</string>
     <string name="ble_not_supported">Bluetooth Low Energy not supported</string>
     <string name="cancel">Cancel</string>
     <string name="connect">connect</string>
@@ -59,21 +62,32 @@
     <!-- From: file:/Users/carlli/AndroidStudioProjects/nRFUART_CLSW/app/src/main/res/values/styles.xml -->
     <eat-comment />
 
-    <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
-    </style>
-
-    <style name="AppTheme" parent="AppBaseTheme">
+    <style name="AppTheme" parent="myTheme.WithActionBar">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
-    <style name="DialogLight" parent="@android:style/Theme.Dialog">
-        <item name="android:windowBackground">@color/whitegrey</item>
-        <item name="android:textColor">@color/black</item>
+    <style name="DialogLight" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowBackground">@color/WhiteGrey</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="MyABMenuTextAppearance" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+               <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+  //修改AB菜单项字体风格        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TranslucentActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="myTheme.WithActionBar" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/TranslucentActionBar</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionMenuTextAppearance">@style/MyABMenuTextAppearance</item>
+        <item name="android:actionMenuTextColor">#FF4500</item>
     </style>
 
 </resources>
